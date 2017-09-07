@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Title of rendered index page
+{% endblock %}
+
+{% block content %}
+    <a href="{{ url_for('page') }}">Clicking this link will render a page using the 'page.html' template.</a>
+{% endblock %}

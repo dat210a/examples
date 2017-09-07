@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Title of the page named 'page'
+{% endblock %}
+
+{% block content %}
+    <ul>
+        {% for i in range(1,5) %}
+            <li>
+                <a href="{{ url_for('number', num=i) }}">Go to page {{ i }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
